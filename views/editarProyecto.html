@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproducir proyectos</title>
+    <title>Editar proyecto</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/proyectos.css">
     <script src="https://kit.fontawesome.com/43d3343120.js" crossorigin="anonymous"></script>
@@ -138,44 +138,30 @@
                 </li>
             </ul>
         </div>
-        <div class="contenedor-principal" id="contenedor-move">
-            <a class="boton-volver" href="verProyectos.html">VOLVER</a>
-            <div class="contenedor-play">
-                <div class="proyecto-play">
-                    <div class="nombre">
-                        <a>OPTIMIZACIÓN EMISARIO FINAL</a>
+        <div class="contenedor">
+            <div class="formulario">
+                <div class="contenedor-formulario">
+                    <div class="nombre-proyecto">
+                        <label for="nombre-proyecto">NOMRRE DEL PROYECTO*</label>
                     </div>
-                    <div class="ubicacion">
-                        <a>UBICACIÓN</a>
-                        <div class="nombre-ubicacion">
-                            <a>BOCHALEMA</a>
-                        </div>
+                    <div class="texto">
+                        <input class="cuadro-texto" type="text" id="nombre-proyecto" name="nombre-proyecto">
+                    </div>
+                </div>
+                <div class="contenedor-formulario">
+                    <div class="ubicacion-proyecto">
+                        <label for="ubicacion-proyecto">UBICACIÓN*</label>
+                    </div>
+                    <div class="texto">
+                        <input class="cuadro-texto" type="text" id="ubicacion-proyecto" name="ubicacion-proyecto ">
                     </div>
                 </div>
             </div>
-            <div class="contenedor-play-subproyecto">
-                <div class="proyecto-play">
-                    <div class="contenedor-proyecto">
-                        <div class="nombre">
-                            <a>EMISARIO FINAL</a>
-                        </div>
-                        <div class="logos-proyecto">
-                            <a href="reproducirSubproyecto.html"><img class="icon-proyecto" src="../imagenes/play.png"></a>
-                            <a href="editarSubproyecto.html"><img class="icon-proyecto" src="../imagenes/editar.png"></a>
-                            <a href="#"><img class="icon-proyecto" src="../imagenes/delete.png"></a>
-                        </div>
-                    </div>
-                    <div class="ubicacion">
-                        <a>COSTO SUBPROYECTO 1</a>
-                        <div class="nombre-ubicacion">
-                            <a>0000000.00</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="botones">
+               <a href="verProyectos.html"><input class="boton boton-verde" type="submit" value="GUARDAR"></a>
+               <a href="verProyectos.html"><input class="boton boton-rojo" type="submit" value="CANCELAR"></a>
             </div>
-            <a class="boton-subproyecto" href="crearSubproyecto.html">CREAR SUBPROYECTO</a>
         </div>
-    </div>
     </div>
     <script src="../js/script.js"></script>
 </body>
