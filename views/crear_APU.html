@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/apu.css">
+    <title>CREAR APU</title>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div id="logo-usuario">Logo Usuario</div>
+        <div id="cerrar-sesion">Cerrar Sesión</div>
+    </header>
+
+    <!-- Contenido principal -->
+    <div id="contenedor-principal">
+
+        <!-- Menú lateral -->
+        <aside>
+            <h2 style="color: white;">Menú</h2>
+            <ul>
+                <li class="desplegable"><a>PROYECTOS</a>
+                    <ul>
+                        <li><a href="#">Ver Proyectos</a></li>
+                        <li><a href="#">Crear Proyecto</a></li>
+                    </ul>
+                </li>
+                <li class="desplegable"><a>ITEMS</a>
+                    <ul>
+                        <li><a href="ver_items.html">Ver item</a></li>
+                        <li><a href="crear_item.html">Crear item</a></li>
+                    </ul>
+                </li>
+                <li class="desplegable"><a>APU</a>
+                    <ul>
+                        <li><a href="ver_APU.html">Ver APU</a></li>
+                        <li><a href="crear_APU.html">Crear APU</a></li>
+                    </ul>
+                </li>
+                <li class="desplegable"><a>RECURSOS</a>
+                    <ul>
+                        <li class="desplegable2"><a>MATERIALES</a>
+                            <ul>
+                                <li><a href="#">Ver Materiales</a></li>
+                                <li><a href="#">Crear Material</a></li>
+                            </ul>
+                        </li>
+                        <li class="desplegable2"><a>MAQUINARIA</a>
+                            <ul>
+                                <li><a href="#">Ver Maquinaria</a></li>
+                                <li><a href="#">Crear Maquinaria</a></li>
+                            </ul>
+                        </li>
+                        <li class="desplegable2"><a>MANO DE OBRA</a>
+                            <ul>
+                                <li><a href="#">Ver Mano de Obra</a></li>
+                                <li><a href="#">Crear Mano de Obra</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="desplegable"><a>USUARIO</a>
+                    <ul>
+                        <li><a href="#">Ver Usuario</a></li>
+                        <li><a href="#">Crear Usuario</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main>
+            <button id="btnVolver">Volver</button>
+            <h1>Crear APU</h1>
+
+            <!-- Formulario -->
+            <form id="formularioCrearAPU" style="background-color: #ddd; color: black; padding: 20px;">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <button type="submit">Crear APU</button>
+            </form>
+
+        </main>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../js/apu.js"></script>
+
+</body>
+</html>
